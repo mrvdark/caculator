@@ -1,0 +1,25 @@
+var so1 = document.getElementById("so1").value;
+var so2 = document.getElementById("so2").value;
+if(so1 == "" || isNaN(so1))
+{
+    alert("nhập số thứ nhất cho tao cái :) ");
+    document.getElementById("so1").focus();
+    return false;
+}
+else if(so2 == "" || isNaN(so2))
+{
+    alert("mày không nhập số thứ 2 à :) ");
+    document.getElementById("so2").focus();
+    return false;
+}
+var num1 = parseInt(so1);
+var num2 = parseInt(so2);
+var num3 = parseInt(so3);
+var kqc = num1+num2;
+var kqt = num1-num2;
+var kqn = num1*num2;
+
+
+document.getElementById("kqc").value = kqc;
+document.getElementById("kqt").value = kqt;
+document.getElementById("kqn").value = kqn;
